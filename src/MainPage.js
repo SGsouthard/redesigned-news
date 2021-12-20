@@ -51,15 +51,15 @@ const displaySmallArticles = smallArticles.map((f, idx) => {
                             <div class="column is-5 is-offset-1 ">
                             <div class="content is-medium">
                                 <h2 class="subtitle is-5 has-text-grey">December 23, 2022</h2>
-                                <h1 class="title has-text-black is-3">{f.title}</h1>
-                                <p class="has-text-dark">{f.summary}</p>
+                                <h1 class="title has-text-black is-3">{f.title[0]}</h1>
+                                <p class="has-text-dark">{f.summary[0]}</p>
                             </div>
                             </div>
                             <div class="column is-5">
                             <div class="content is-medium">
                                 <h2 class="subtitle is-5 has-text-grey">December 25, 2022</h2>
-                                <h1 class="title has-text-black is-3">{f.title}</h1>
-                                <p class="has-text-dark">{f.summary}</p>
+                                <h1 class="title has-text-black is-3">{f.title[1]}</h1>
+                                <p class="has-text-dark">{f.summary[1]}</p>
                             </div>
                             </div>
                         </div>
@@ -74,15 +74,15 @@ const displaySmallArticles = smallArticles.map((f, idx) => {
                             <div class="column is-5 is-offset-1">
                             <div class="content is-medium">
                                 <h2 class="subtitle is-5 has-text-grey">December 25, 2022</h2>
-                                <h1 class="title has-text-black is-3">{f.title}</h1>
-                                <p class="has-text-dark">{f.summary}</p>
+                                <h1 class="title has-text-black is-3">{f.title[2]}</h1>
+                                <p class="has-text-dark">{f.summary[2]}</p>
                             </div>
                             </div>
                             <div class="column is-5">
                             <div class="content is-medium">
                                 <h2 class="subtitle is-5 has-text-grey">December 25, 2022</h2>
-                                <h1 class="title has-text-black is-3">{f.title}</h1>
-                                <p class="has-text-dark">{f.summary}</p>
+                                <h1 class="title has-text-black is-3">{f.title[3]}</h1>
+                                <p class="has-text-dark">{f.summary[3]}</p>
                             </div>
                             </div>
                         </div>
