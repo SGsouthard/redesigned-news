@@ -1,6 +1,48 @@
 import React, { Component } from "react";
 import "./MainPage.css"
 
+const smallArticles = [
+    {
+        title: "Ultimate Frisbee Champ breaks knee in freak accident",
+        summary: "Ultimate Frisbee player falls down elevator shaft. Ongoing investigation to determine if sabotage"
+    },
+    {
+        title: "Player seen flirting with opposing team",
+        summary: "Askmore Bepis caught texting with Dinnemus Malcolm in the middle of the game! We were only able to glance the phone from the stands but we suspect they sent 'ASL?'"
+    },
+    {
+        title: "Jillikins Jellyfish retiring early?!",
+        summary: "Team Leader Jellyfish quoted that they were retiring early from the sport! Quoted as saying 'Look man midterms are coming up, I don't have time...'"
+    },
+    {
+        title: "Rain delays game",
+        summary: "A freak bout of rain has caused delays for the Beestingers versus Kites game that was highly anticipated this weekend"
+    }
+]
+
+const bigArticles = [
+    {
+        title: "Get your hype on for the big game this week!",
+        summary: "This weekend is the big, Unicorns versus Hippocampi game!"
+    },
+    {
+        title: "New Player signed onto the Unicorns",
+        summary: "An actual Unicorn was signed onto the team, The Unicorns, in an attempt to turn the tides for the big games!"
+    }
+]
+
+const displayBigArticles = bigArticles.map((b, idx) => {
+    return (
+        <div>
+            <div class="content is-medium" key={idx}>
+                                        <h2 class="subtitle is-4">December 25, 2022</h2>
+                                        <h1 class="title">{b.title}</h1>
+                                        <p>{b.summary}</p>
+                                    </div>
+        </div>
+    )
+})
+
 //Components
 
 class MainPage extends Component {
@@ -62,13 +104,8 @@ class MainPage extends Component {
                             <section class="section">
                             <div class="columns">
                                 <div class="column is-8 is-offset-2">
-                                    <div class="content is-medium">
-                                        <h2 class="subtitle is-4">December 25, 2022</h2>
-                                        <h1 class="title">Getting Started</h1>
-                                        <p>This is a starter template for creating a beautiful, customizable blog with minimal
-                                        effort. You’ll only have to change a few settings and you’re ready to go. As with all Jigsaw sites,
-                                        configuration settings can be found in config</p>
-                                    </div>
+                                    {/* big article 1 */}
+                                    {displayBigArticles[0]}
                                 </div>
                             </div>
                             </section>
@@ -80,13 +117,8 @@ class MainPage extends Component {
                                 <section class="section">
                                 <div class="columns">
                                     <div class="column is-8 is-offset-2">
-                                        <div class="content is-medium">
-                                            <h2 class="subtitle is-4">December 25, 2022</h2>
-                                            <h1 class="title">Getting Started</h1>
-                                            <p>This is a starter template for creating a beautiful, customizable blog with minimal
-                                            effort. You’ll only have to change a few settings and you’re ready to go. As with all Jigsaw sites,
-                                            configuration settings can be found in config</p>
-                                        </div>
+                                        {/* big article 2 */}
+                                        {displayBigArticles[1]}
                                     </div>
                                 </div>
                                 </section>
