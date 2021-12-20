@@ -51,7 +51,7 @@ const displaySmallArticles = smallArticles.map((f, idx) => {
                             <div class="column is-5 is-offset-1 ">
                             <div class="content is-medium">
                                 <h2 class="subtitle is-5 has-text-grey">December 23, 2022</h2>
-                                <h1 class="title has-text-black is-3">{f.title[]}</h1>
+                                <h1 class="title has-text-black is-3">{f.title}</h1>
                                 <p class="has-text-dark">{f.summary}</p>
                             </div>
                             </div>
